@@ -1,0 +1,162 @@
+  <mat-toolbar color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="companyName" routerLink="/">
+      <span> Chalo Online </span>
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+
+      <div class="subnav">
+      <mat-icon>dashboard</mat-icon>
+      <button class="subnavbtn" routerLink="/dashboard">Dashboard<i class="fa fa-caret-down"></i></button>
+      </div>
+
+      <div class="subnav">
+      <mat-icon>link</mat-icon>
+      <button class="subnavbtn" routerLink="/sendfreelink">Send Free Link<i class="fa fa-caret-down"></i></button>
+      </div>
+
+
+      <div class="subnav">
+      <mat-icon>school</mat-icon>
+      <button class="subnavbtn" routerLink="/active-account">Active Now<i class="fa fa-caret-down"></i></button>
+      </div>
+
+
+      <div class="subnav">
+        <mat-icon>people_alt</mat-icon>
+        <button class="subnavbtn">Team</button>
+        <div class="subnav-content">
+          <a routerLink="/mydirect">
+            <mat-icon>badge</mat-icon>My Direct
+          </a>
+          <a routerLink="myteam">
+            <mat-icon>people_alt</mat-icon> My Team
+          </a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <mat-icon>emoji_events</mat-icon>
+        <button class="subnavbtn">Income<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a routerLink="/referalincome">
+            <mat-icon>apartment</mat-icon> Referal Income
+          </a>
+          <a routerLink="/bonousincome">
+            <mat-icon>business_center</mat-icon> Bonous Income
+          </a>
+          <a routerLink="/rewardsclub">
+            <mat-icon>local_bar</mat-icon> Rewards Club
+          </a>
+          <a routerLink="/leadershipclub">
+            <mat-icon>emoji_people</mat-icon> LeadershipClub
+          </a>
+        </div>
+      </div>
+
+     <div class="subnav">
+      <mat-icon>text_snippet</mat-icon>
+      <button class="subnavbtn" routerLink="/payment-history">Payment History<i class="fa fa-caret-down"></i></button>
+     </div>
+
+
+      <div class="subnav">
+      <mat-icon>local_phone</mat-icon>
+      <button class="subnavbtn" routerLink="/contact-us">Contact<i class="fa fa-caret-down"></i></button>
+     </div>
+
+
+      <div class="subnav">
+      <mat-icon>exit_to_app</mat-icon>
+      <button class="subnavbtn" routerLink="/">Logout<i class="fa fa-caret-down"></i></button>
+      </div>
+
+    </div>
+
+  </mat-toolbar>
+  <!-- <mat-sidenav-container fxFlexFill class="example-container"> -->
+
+    <mat-sidenav fxFlexFill color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+
+        
+        <div class="subnav">
+          <mat-icon>dashboard</mat-icon>
+          <button class="subnavbtn" routerLink="/dashboard">Dashboard<i class="fa fa-caret-down"></i></button>
+          </div>
+    
+          <div class="subnav">
+          <mat-icon>link</mat-icon>
+          <button class="subnavbtn" routerLink="/sendfreelink">Send Free Link<i class="fa fa-caret-down"></i></button>
+          </div>
+    
+    
+          <div class="subnav">
+          <mat-icon>school</mat-icon>
+          <button class="subnavbtn" routerLink="/active-account">Active Now<i class="fa fa-caret-down"></i></button>
+          </div>
+    
+    
+          <div class="subnav">
+            <mat-icon>people_alt</mat-icon>
+            <button class="subnavbtn">Team</button>
+            <div class="subnav-content">
+              <a routerLink="/mydirect">
+                <mat-icon>badge</mat-icon>My Direct
+              </a>
+              <a routerLink="myteam">
+                <mat-icon>people_alt</mat-icon> My Team
+              </a>
+            </div>
+          </div>
+    
+          <div class="subnav">
+            <mat-icon>emoji_events</mat-icon>
+            <button class="subnavbtn">Income<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a routerLink="/referalincome">
+                <mat-icon>apartment</mat-icon> Referal Income
+              </a>
+              <a routerLink="/bonousincome">
+                <mat-icon>business_center</mat-icon> Bonous Income
+              </a>
+              <a routerLink="/rewardsclub">
+                <mat-icon>local_bar</mat-icon> Rewards Club
+              </a>
+              <a routerLink="/leadershipclub">
+                <mat-icon>emoji_people</mat-icon> LeadershipClub
+              </a>
+            </div>
+          </div>
+    
+         <div class="subnav">
+          <mat-icon>text_snippet</mat-icon>
+          <button class="subnavbtn" routerLink="/payment-history">Payment History<i class="fa fa-caret-down"></i></button>
+         </div>
+    
+    
+          <div class="subnav">
+          <mat-icon>local_phone</mat-icon>
+          <button class="subnavbtn" routerLink="/contact-us">Contact<i class="fa fa-caret-down"></i></button>
+         </div>
+    
+    
+          <div class="subnav">
+          <mat-icon>exit_to_app</mat-icon>
+          <button class="subnavbtn" routerLink="/">Logout<i class="fa fa-caret-down"></i></button>
+          </div>
+         
+          
+
+      </div>
+    </mat-sidenav>
+  <!--  <mat-sidenav-content fxFlexFill>
+      Awesome content
+    </mat-sidenav-content>-->
+  <!-- </mat-sidenav-container> -->

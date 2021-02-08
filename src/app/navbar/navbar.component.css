@@ -1,0 +1,124 @@
+/* The navigation menu */
+.navbar {
+  background-color: #2f79A3;
+  z-index: 2;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12x 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #8CCADD;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:  #6EB5CE;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: black;    }
+  49%{    color: red; }
+  60%{    color: black; }
+  99%{    color:red;  }
+  100%{   color:black;    }
+}
+
+.logo{
+  padding:0px 5px;
+  font-size:45px;
+}
+
+/*--------------------------------------------------------------------*/
+.companyName{
+  font-size: 150%;
+}
+
+.mat-toolbar{
+height: 15vh;
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container{
+background-color: lightskyblue;
+}
+
+a{
+  font-size: 16px;
+  text-decoration: none;
+  /* font-size: 110%; */
+  white-space: normal;
+}
+
+button{
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content{
+    font-size: 200%;
+    text-align: center;
+}

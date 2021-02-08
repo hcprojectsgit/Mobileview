@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{     /*parent element fof they page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.leftside{
+  width: 60%;
+  height: 100%;
+}
+.leftside img{
+  width: 100%;
+  height: 100%;
+}
+.rightside{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.mainform{
+  
+  background-color: white;
+  width: 70%;
+  height: 80%;
+}
+.mainform input{
+  border: 0;
+outline: 0;
+background: transparent;
+border-bottom: 3px solid blue;
+
+}
+.mainform button{
+  background:linear-gradient(to right,blue , #37d5d6 );
+  
+}

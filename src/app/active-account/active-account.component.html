@@ -1,0 +1,124 @@
+<h1  style="text-align:center;"> Account Opening Form </h1>
+<form class ="form-vertical" #f ="ngForm">
+<!--------------------------------------- 1st level----------------------------------------------->
+<h4> Personal Information </h4>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input ngModel name="name" #name="ngModel"  type="text" placeholder="Enter Your Name" required email> 
+    </div>
+    <div class="form-group">
+      <label for="birthday">Birthday</label>
+      <input ngModel name="birthday" #birthday="ngModel"  type="date" placeholder="Select Your DOB" required birthday> 
+   </div>
+   <div class="form-group">
+     <label for="gender">Gender</label>
+         <div class="rs-select2 js-select-simple select--no-search">
+             <select name="gender">
+                 <option disabled="disabled" selected="selected">Choose option</option>
+                 <option> Male </option>
+                 <option> Female </option>
+                 <option> Transgender </option>
+                 <option> Prefer Not To Say </option>
+             </select>
+         <div class="select-dropdown"></div>
+     </div>
+  </div>
+  <div class="form-group">
+      <label for="maritalstatus">Marital Status </label>
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select name="maritalstatus">
+                 <option disabled="disabled" selected="selected">Choose option</option>
+                 <option> Single </option>
+                 <option> Married </option>
+                 <option> Divoced </option>
+             </select>
+          <div class="select-dropdown"></div>
+      </div>
+ </div>
+ <div class="form-group">
+       <label for="job">Occupation</label>
+       <input ngModel name="job" #job="ngModel"  type="text" placeholder="Enter Your Occupation" required job> 
+  </div>
+  <div class="form-group">
+        <label for="income"> Annual Gross Income </label>
+        <input ngModel name="income" #name="ngModel"  type="text" placeholder="Enter Your Annual Income" required income> 
+  </div>
+
+
+<!--------------------------------------- 2st level----------------------------------------------->
+  
+<h4> Communication Information </h4>
+     <div class="form-group">
+         <label for="email">Email Address</label>
+         <input ngModel name="email" #email="ngModel"  type="text" placeholder="Enter Your Email" required email> 
+     </div>
+     <div class="form-group">
+         <label for="address">Address</label>
+         <input ngModel name="address" #address="ngModel"  type="text" placeholder="Enter Your Address" required address> 
+     </div>
+     <div class="form-group">
+         <label for="locality"> City/ Town/Village</label>
+         <input ngModel name="locality" #locality="ngModel"  type="text" placeholder="Enter Your City/Town/Village" required locality> 
+     </div>
+     <div class="form-group">
+         <label for="state"> State </label>
+         <input ngModel name="state" #state="ngModel"  type="text" placeholder="Enter Your State" required state> 
+     </div>
+     <div class="form-group">
+         <label for="pincode"> Pincode </label>
+         <input ngModel name="pincode" #pincode="ngModel"  type="text" placeholder="Enter Your Pincode" required pincode> 
+     </div>
+
+<!--------------------------------------- 3st level----------------------------------------------->
+<h4> Family Information </h4>
+    <div class="form-group">
+     <label for="father">Father's Name</label>
+     <input ngModel name="father" #father="ngModel"  type="text" placeholder="Enter Your Father's Name" required father> 
+  </div>
+  <div class="form-group">
+     <label for="mother">Mother's Name</label>
+     <input ngModel name="mother" #mother="ngModel"  type="text" placeholder="Enter Your Mother's Name" required mother> 
+  </div>
+ 
+
+<!--------------------------------------- 4st level----------------------------------------------->
+<h4> Legal Information </h4>
+     <div class="form-group">
+         <label for="aadhar">Aadhar Card Number</label>
+         <input ngModel name="aadhar" #aadhar="ngModel"  type="text" placeholder="Enter Your Aadhar No." required aadhar> 
+   </div>
+   <div class="form-group">
+     <label for="pan">Pan No.</label>
+     <input ngModel name="pan" #pan="ngModel"  type="text" placeholder="Enter Your Pan No." required pan> 
+  </div>
+  <div class="form-group">
+      <label for="incomeproof">Income Proof</label>
+      <div class="rs-select2 js-select-simple select--no-search">
+          <select name="incomeproof">
+             <option disabled="disabled" selected="selected"> Select Income Proof </option>
+             <option> ITR </option>
+             <option> Bank Statement </option>
+             <option> Salary slip </option>
+         </select>
+         <div class="select-dropdown"></div>
+      </div>
+  </div>
+  <div class="form-group">
+      <label for="addressproof"> Address Proof </label>
+      <div class="rs-select2 js-select-simple select--no-search">
+          <select name="addressproof">
+             <option disabled="disabled" selected="selected"> Select Address Proof </option>
+             <option> Passport </option>
+             <option> Driving License </option>
+             <option> Bank Statement </option>
+             <option> Gas Bill </option>
+             <option> Telephone Bill </option>
+             <option> Electricity Bill </option>
+             <option> Ration Card </option>
+             <option> Aadhar with same Address</option>
+         </select>
+         <div class="select-dropdown"></div>
+      </div>
+  </div>
+  <button (click) ="submitUser()" type="button" class="btn btn-default"> Submit </button>
+</form>
